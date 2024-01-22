@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    color: #d1d0cf;
+    background: #212529;
+}
+
+
+/* Navbar area */
+
+img#logo {
+    width: 100px;
+}
+
+img.user-icon {
+    width: 25px;
+  }
+
+
+
+/* TV Section*/
+
+h2 {
+  margin: 0px;
+  font-weight: bold;
+}
+
+.btn-dark {
+  border: 1px solid white;
+  background-color: black; 
+}
+
+.btn-dark:hover {
+  border: 1px solid white;
+  background-color: inherit;
+}
+
+.dropdown-menu-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#first-button {
+  border-right: none;
+}
+
+#second-button {
+  border-left: none;
+}
+
+
+/*Carousell*/
+
+h4 {
+font-weight: bold;  
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.card{
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+
+/*Footer*/
+
+footer {
+  padding-top: 100px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+
+
